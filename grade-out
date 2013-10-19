@@ -1,2 +1,1488 @@
 1234 decimal is 2322 octal!
+ebp 00106eb8  eip 0010058d  args 00000000 00106f18 00000000 00000000 00000000
+ebp 00106ed8  eip 001005c5  args 00000000 00106f18 00000000 00000000 00000000
+ebp 00106ef8  eip 001005fe  args 00000000 00106f18 00000000 00000000 00000000
+ebp 00106fc8  eip 001000e8  args 00103a18 000004d2 00001a54 00000000 00000000
+ebp 00106ff8  eip 00100024  args 876007ff 00000010 00000000 00000000 00000000
+ebp 00106eb8  eip 0010058d  args 00000001 00106f40 00000000 00000000 00000000
+ebp 00106ed8  eip 001005b1  args 00000001 00106f40 00000000 00000000 00000000
+ebp 00106ef8  eip 001005fe  args 00000001 00106f40 00000000 00000000 00000000
+ebp 00106fc8  eip 001000e8  args 00103a18 000004d2 00001a54 00000000 00000000
+ebp 00106ff8  eip 00100024  args 876007ff 00000010 00000000 00000000 00000000
+ebp 00106eb8  eip 00100579  args 00000002 00106f68 00000000 00000000 00000000
+ebp 00106ed8  eip 001005c5  args 00000002 00106f68 00000000 00000000 00000000
+ebp 00106ef8  eip 001005fe  args 00000002 00106f68 00000000 00000000 00000000
+ebp 00106fc8  eip 001000e8  args 00103a18 000004d2 00001a54 00000000 00000000
+ebp 00106ff8  eip 00100024  args 876007ff 00000010 00000000 00000000 00000000
+ebp 00106eb8  eip 00100579  args 00000003 00106f90 00000000 00000000 00000000
+ebp 00106ed8  eip 001005b1  args 00000003 00106f90 00000000 00000000 00000000
+ebp 00106ef8  eip 001005fe  args 00000003 00106f90 00000000 00000000 00000000
+ebp 00106fc8  eip 001000e8  args 00103a18 000004d2 00001a54 00000000 00000000
+ebp 00106ff8  eip 00100024  args 876007ff 00000010 00000000 00000000 00000000
 debug_check() succeeded!
+cpu_init complete
+initializing idt
+TRAP frame at 0x106efc
+  edi  0x00000000
+  esi  0x00010094
+  ebp  0x00106f88
+  ebx  0x00010094
+  edx  0x00106f60
+  ecx  0x00000000
+  eax  0x00000000
+  es   0x----0010
+  ds   0x----0010
+  trap 0x00000000 Divide error
+  err  0x00000000
+  eip  0x001021cd
+  cs   0x----0008
+  flag 0x00000012
+  esp  0x0010058d
+  ss   0x----05b1
+TRAP frame at 0x106efc
+  edi  0x00000000
+  esi  0x00010094
+  ebp  0x00106f88
+  ebx  0x00010094
+  edx  0x00106f60
+  ecx  0x00000000
+  eax  0x00000000
+  es   0x----0010
+  ds   0x----0010
+  trap 0x00000000 Divide error
+  err  0x00000000
+  eip  0x001021cd
+  cs   0x----0008
+  flag 0x00000012
+  esp  0x0010058d
+  ss   0x----05b1
+reip = 1057231
+TRAP frame at 0x106efc
+  edi  0x00000000
+  esi  0x00010094
+  ebp  0x00106f88
+  ebx  0x00010094
+  edx  0x00106f60
+  ecx  0x00000000
+  eax  0xfeedface
+  es   0x----0010
+  ds   0x----0010
+  trap 0x00000003 Breakpoint
+  err  0x00000000
+  eip  0x00102230
+  cs   0x----0008
+  flag 0x00000046
+  esp  0x0010058d
+  ss   0x----05b1
+TRAP frame at 0x106efc
+  edi  0x00000000
+  esi  0x00010094
+  ebp  0x00106f88
+  ebx  0x00010094
+  edx  0x00106f60
+  ecx  0x00000000
+  eax  0xfeedface
+  es   0x----0010
+  ds   0x----0010
+  trap 0x00000003 Breakpoint
+  err  0x00000000
+  eip  0x00102230
+  cs   0x----0008
+  flag 0x00000046
+  esp  0x0010058d
+  ss   0x----05b1
+reip = 1057328
+TRAP frame at 0x106efc
+  edi  0x00000000
+  esi  0x00010094
+  ebp  0x00106f88
+  ebx  0x00010094
+  edx  0x00106f60
+  ecx  0x00000000
+  eax  0xe0000000
+  es   0x----0010
+  ds   0x----0010
+  trap 0x00000004 Overflow
+  err  0x00000000
+  eip  0x0010226b
+  cs   0x----0008
+  flag 0x00000886
+  esp  0x0010058d
+  ss   0x----05b1
+TRAP frame at 0x106efc
+  edi  0x00000000
+  esi  0x00010094
+  ebp  0x00106f88
+  ebx  0x00010094
+  edx  0x00106f60
+  ecx  0x00000000
+  eax  0xe0000000
+  es   0x----0010
+  ds   0x----0010
+  trap 0x00000004 Overflow
+  err  0x00000000
+  eip  0x0010226b
+  cs   0x----0008
+  flag 0x00000886
+  esp  0x0010058d
+  ss   0x----05b1
+reip = 1057387
+TRAP frame at 0x106efc
+  edi  0x00000000
+  esi  0x00010094
+  ebp  0x00106f88
+  ebx  0x00010094
+  edx  0x00106f60
+  ecx  0x00000000
+  eax  0x00000000
+  es   0x----0010
+  ds   0x----0010
+  trap 0x00000005 BOUND Range Exceeded
+  err  0x00000000
+  eip  0x001022b1
+  cs   0x----0008
+  flag 0x00000046
+  esp  0x0010058d
+  ss   0x----05b1
+TRAP frame at 0x106efc
+  edi  0x00000000
+  esi  0x00010094
+  ebp  0x00106f88
+  ebx  0x00010094
+  edx  0x00106f60
+  ecx  0x00000000
+  eax  0x00000000
+  es   0x----0010
+  ds   0x----0010
+  trap 0x00000005 BOUND Range Exceeded
+  err  0x00000000
+  eip  0x001022b1
+  cs   0x----0008
+  flag 0x00000046
+  esp  0x0010058d
+  ss   0x----05b1
+reip = 1057460
+TRAP frame at 0x106efc
+  edi  0x00000000
+  esi  0x00010094
+  ebp  0x00106f88
+  ebx  0x00010094
+  edx  0x00106f60
+  ecx  0x00000000
+  eax  0x00000005
+  es   0x----0010
+  ds   0x----0010
+  trap 0x00000006 Invalid Opcode
+  err  0x00000000
+  eip  0x001022e7
+  cs   0x----0008
+  flag 0x00000046
+  esp  0x0010058d
+  ss   0x----05b1
+TRAP frame at 0x106efc
+  edi  0x00000000
+  esi  0x00010094
+  ebp  0x00106f88
+  ebx  0x00010094
+  edx  0x00106f60
+  ecx  0x00000000
+  eax  0x00000005
+  es   0x----0010
+  ds   0x----0010
+  trap 0x00000006 Invalid Opcode
+  err  0x00000000
+  eip  0x001022e7
+  cs   0x----0008
+  flag 0x00000046
+  esp  0x0010058d
+  ss   0x----05b1
+reip = 1057513
+TRAP frame at 0x106efc
+  edi  0x00000000
+  esi  0x00010094
+  ebp  0x00106f88
+  ebx  0x00010094
+  edx  0x00106f60
+  ecx  0x00000000
+  eax  0xffffffff
+  es   0x----0010
+  ds   0x----0010
+  trap 0x0000000d General Protection
+  err  0x0000fffc
+  eip  0x00102321
+  cs   0x----0008
+  flag 0x00000046
+  esp  0x0010058d
+  ss   0x----05b1
+TRAP frame at 0x106efc
+  edi  0x00000000
+  esi  0x00010094
+  ebp  0x00106f88
+  ebx  0x00010094
+  edx  0x00106f60
+  ecx  0x00000000
+  eax  0xffffffff
+  es   0x----0010
+  ds   0x----0010
+  trap 0x0000000d General Protection
+  err  0x0000fffc
+  eip  0x00102321
+  cs   0x----0008
+  flag 0x00000046
+  esp  0x0010058d
+  ss   0x----05b1
+reip = 1057571
+trap_check_kernel() succeeded!
+kernel warning at kern/mem.c:47: Assuming we have 1GB of memory!
+Physical memory: 1048576K available, base = 640K, extended = 1047552K
+kernel end 0x108f84, pageinfo 0x109000
+num pages 262144, pagetable takes 512 pages
+page 0: IDT/BIOS/IO
+page 1: IDT/BIOS/IO
+page 2: free
+page 3: free
+page 4: free
+page 5: free
+page 6: free
+page 7: free
+page 8: free
+page 9: free
+page 10: free
+page 11: free
+page 12: free
+page 13: free
+page 14: free
+page 15: free
+page 16: free
+page 17: free
+page 18: free
+page 19: free
+page 20: free
+page 21: free
+page 22: free
+page 23: free
+page 24: free
+page 25: free
+page 26: free
+page 27: free
+page 28: free
+page 29: free
+page 30: free
+page 31: free
+page 32: free
+page 33: free
+page 34: free
+page 35: free
+page 36: free
+page 37: free
+page 38: free
+page 39: free
+page 40: free
+page 41: free
+page 42: free
+page 43: free
+page 44: free
+page 45: free
+page 46: free
+page 47: free
+page 48: free
+page 49: free
+page 50: free
+page 51: free
+page 52: free
+page 53: free
+page 54: free
+page 55: free
+page 56: free
+page 57: free
+page 58: free
+page 59: free
+page 60: free
+page 61: free
+page 62: free
+page 63: free
+page 64: free
+page 65: free
+page 66: free
+page 67: free
+page 68: free
+page 69: free
+page 70: free
+page 71: free
+page 72: free
+page 73: free
+page 74: free
+page 75: free
+page 76: free
+page 77: free
+page 78: free
+page 79: free
+page 80: free
+page 81: free
+page 82: free
+page 83: free
+page 84: free
+page 85: free
+page 86: free
+page 87: free
+page 88: free
+page 89: free
+page 90: free
+page 91: free
+page 92: free
+page 93: free
+page 94: free
+page 95: free
+page 96: free
+page 97: free
+page 98: free
+page 99: free
+page 100: free
+page 101: free
+page 102: free
+page 103: free
+page 104: free
+page 105: free
+page 106: free
+page 107: free
+page 108: free
+page 109: free
+page 110: free
+page 111: free
+page 112: free
+page 113: free
+page 114: free
+page 115: free
+page 116: free
+page 117: free
+page 118: free
+page 119: free
+page 120: free
+page 121: free
+page 122: free
+page 123: free
+page 124: free
+page 125: free
+page 126: free
+page 127: free
+page 128: free
+page 129: free
+page 130: free
+page 131: free
+page 132: free
+page 133: free
+page 134: free
+page 135: free
+page 136: free
+page 137: free
+page 138: free
+page 139: free
+page 140: free
+page 141: free
+page 142: free
+page 143: free
+page 144: free
+page 145: free
+page 146: free
+page 147: free
+page 148: free
+page 149: free
+page 150: free
+page 151: free
+page 152: free
+page 153: free
+page 154: free
+page 155: free
+page 156: free
+page 157: free
+page 158: free
+page 159: free
+page 160: BIOS IO
+page 161: BIOS IO
+page 162: BIOS IO
+page 163: BIOS IO
+page 164: BIOS IO
+page 165: BIOS IO
+page 166: BIOS IO
+page 167: BIOS IO
+page 168: BIOS IO
+page 169: BIOS IO
+page 170: BIOS IO
+page 171: BIOS IO
+page 172: BIOS IO
+page 173: BIOS IO
+page 174: BIOS IO
+page 175: BIOS IO
+page 176: BIOS IO
+page 177: BIOS IO
+page 178: BIOS IO
+page 179: BIOS IO
+page 180: BIOS IO
+page 181: BIOS IO
+page 182: BIOS IO
+page 183: BIOS IO
+page 184: BIOS IO
+page 185: BIOS IO
+page 186: BIOS IO
+page 187: BIOS IO
+page 188: BIOS IO
+page 189: BIOS IO
+page 190: BIOS IO
+page 191: BIOS IO
+page 192: BIOS IO
+page 193: BIOS IO
+page 194: BIOS IO
+page 195: BIOS IO
+page 196: BIOS IO
+page 197: BIOS IO
+page 198: BIOS IO
+page 199: BIOS IO
+page 200: BIOS IO
+page 201: BIOS IO
+page 202: BIOS IO
+page 203: BIOS IO
+page 204: BIOS IO
+page 205: BIOS IO
+page 206: BIOS IO
+page 207: BIOS IO
+page 208: BIOS IO
+page 209: BIOS IO
+page 210: BIOS IO
+page 211: BIOS IO
+page 212: BIOS IO
+page 213: BIOS IO
+page 214: BIOS IO
+page 215: BIOS IO
+page 216: BIOS IO
+page 217: BIOS IO
+page 218: BIOS IO
+page 219: BIOS IO
+page 220: BIOS IO
+page 221: BIOS IO
+page 222: BIOS IO
+page 223: BIOS IO
+page 224: BIOS IO
+page 225: BIOS IO
+page 226: BIOS IO
+page 227: BIOS IO
+page 228: BIOS IO
+page 229: BIOS IO
+page 230: BIOS IO
+page 231: BIOS IO
+page 232: BIOS IO
+page 233: BIOS IO
+page 234: BIOS IO
+page 235: BIOS IO
+page 236: BIOS IO
+page 237: BIOS IO
+page 238: BIOS IO
+page 239: BIOS IO
+page 240: BIOS IO
+page 241: BIOS IO
+page 242: BIOS IO
+page 243: BIOS IO
+page 244: BIOS IO
+page 245: BIOS IO
+page 246: BIOS IO
+page 247: BIOS IO
+page 248: BIOS IO
+page 249: BIOS IO
+page 250: BIOS IO
+page 251: BIOS IO
+page 252: BIOS IO
+page 253: BIOS IO
+page 254: BIOS IO
+page 255: BIOS IO
+page 256: KERNEL
+page 257: KERNEL
+page 258: KERNEL
+page 259: KERNEL
+page 260: KERNEL
+page 261: KERNEL
+page 262: KERNEL
+page 263: KERNEL
+page 264: KERNEL
+page 265: MEMPAGES
+page 266: MEMPAGES
+page 267: MEMPAGES
+page 268: MEMPAGES
+page 269: MEMPAGES
+page 270: MEMPAGES
+page 271: MEMPAGES
+page 272: MEMPAGES
+page 273: MEMPAGES
+page 274: MEMPAGES
+page 275: MEMPAGES
+page 276: MEMPAGES
+page 277: MEMPAGES
+page 278: MEMPAGES
+page 279: MEMPAGES
+page 280: MEMPAGES
+page 281: MEMPAGES
+page 282: MEMPAGES
+page 283: MEMPAGES
+page 284: MEMPAGES
+page 285: MEMPAGES
+page 286: MEMPAGES
+page 287: MEMPAGES
+page 288: MEMPAGES
+page 289: MEMPAGES
+page 290: MEMPAGES
+page 291: MEMPAGES
+page 292: MEMPAGES
+page 293: MEMPAGES
+page 294: MEMPAGES
+page 295: MEMPAGES
+page 296: MEMPAGES
+page 297: MEMPAGES
+page 298: MEMPAGES
+page 299: MEMPAGES
+page 300: MEMPAGES
+page 301: MEMPAGES
+page 302: MEMPAGES
+page 303: MEMPAGES
+page 304: MEMPAGES
+page 305: MEMPAGES
+page 306: MEMPAGES
+page 307: MEMPAGES
+page 308: MEMPAGES
+page 309: MEMPAGES
+page 310: MEMPAGES
+page 311: MEMPAGES
+page 312: MEMPAGES
+page 313: MEMPAGES
+page 314: MEMPAGES
+page 315: MEMPAGES
+page 316: MEMPAGES
+page 317: MEMPAGES
+page 318: MEMPAGES
+page 319: MEMPAGES
+page 320: MEMPAGES
+page 321: MEMPAGES
+page 322: MEMPAGES
+page 323: MEMPAGES
+page 324: MEMPAGES
+page 325: MEMPAGES
+page 326: MEMPAGES
+page 327: MEMPAGES
+page 328: MEMPAGES
+page 329: MEMPAGES
+page 330: MEMPAGES
+page 331: MEMPAGES
+page 332: MEMPAGES
+page 333: MEMPAGES
+page 334: MEMPAGES
+page 335: MEMPAGES
+page 336: MEMPAGES
+page 337: MEMPAGES
+page 338: MEMPAGES
+page 339: MEMPAGES
+page 340: MEMPAGES
+page 341: MEMPAGES
+page 342: MEMPAGES
+page 343: MEMPAGES
+page 344: MEMPAGES
+page 345: MEMPAGES
+page 346: MEMPAGES
+page 347: MEMPAGES
+page 348: MEMPAGES
+page 349: MEMPAGES
+page 350: MEMPAGES
+page 351: MEMPAGES
+page 352: MEMPAGES
+page 353: MEMPAGES
+page 354: MEMPAGES
+page 355: MEMPAGES
+page 356: MEMPAGES
+page 357: MEMPAGES
+page 358: MEMPAGES
+page 359: MEMPAGES
+page 360: MEMPAGES
+page 361: MEMPAGES
+page 362: MEMPAGES
+page 363: MEMPAGES
+page 364: MEMPAGES
+page 365: MEMPAGES
+page 366: MEMPAGES
+page 367: MEMPAGES
+page 368: MEMPAGES
+page 369: MEMPAGES
+page 370: MEMPAGES
+page 371: MEMPAGES
+page 372: MEMPAGES
+page 373: MEMPAGES
+page 374: MEMPAGES
+page 375: MEMPAGES
+page 376: MEMPAGES
+page 377: MEMPAGES
+page 378: MEMPAGES
+page 379: MEMPAGES
+page 380: MEMPAGES
+page 381: MEMPAGES
+page 382: MEMPAGES
+page 383: MEMPAGES
+page 384: MEMPAGES
+page 385: MEMPAGES
+page 386: MEMPAGES
+page 387: MEMPAGES
+page 388: MEMPAGES
+page 389: MEMPAGES
+page 390: MEMPAGES
+page 391: MEMPAGES
+page 392: MEMPAGES
+page 393: MEMPAGES
+page 394: MEMPAGES
+page 395: MEMPAGES
+page 396: MEMPAGES
+page 397: MEMPAGES
+page 398: MEMPAGES
+page 399: MEMPAGES
+page 400: MEMPAGES
+page 401: MEMPAGES
+page 402: MEMPAGES
+page 403: MEMPAGES
+page 404: MEMPAGES
+page 405: MEMPAGES
+page 406: MEMPAGES
+page 407: MEMPAGES
+page 408: MEMPAGES
+page 409: MEMPAGES
+page 410: MEMPAGES
+page 411: MEMPAGES
+page 412: MEMPAGES
+page 413: MEMPAGES
+page 414: MEMPAGES
+page 415: MEMPAGES
+page 416: MEMPAGES
+page 417: MEMPAGES
+page 418: MEMPAGES
+page 419: MEMPAGES
+page 420: MEMPAGES
+page 421: MEMPAGES
+page 422: MEMPAGES
+page 423: MEMPAGES
+page 424: MEMPAGES
+page 425: MEMPAGES
+page 426: MEMPAGES
+page 427: MEMPAGES
+page 428: MEMPAGES
+page 429: MEMPAGES
+page 430: MEMPAGES
+page 431: MEMPAGES
+page 432: MEMPAGES
+page 433: MEMPAGES
+page 434: MEMPAGES
+page 435: MEMPAGES
+page 436: MEMPAGES
+page 437: MEMPAGES
+page 438: MEMPAGES
+page 439: MEMPAGES
+page 440: MEMPAGES
+page 441: MEMPAGES
+page 442: MEMPAGES
+page 443: MEMPAGES
+page 444: MEMPAGES
+page 445: MEMPAGES
+page 446: MEMPAGES
+page 447: MEMPAGES
+page 448: MEMPAGES
+page 449: MEMPAGES
+page 450: MEMPAGES
+page 451: MEMPAGES
+page 452: MEMPAGES
+page 453: MEMPAGES
+page 454: MEMPAGES
+page 455: MEMPAGES
+page 456: MEMPAGES
+page 457: MEMPAGES
+page 458: MEMPAGES
+page 459: MEMPAGES
+page 460: MEMPAGES
+page 461: MEMPAGES
+page 462: MEMPAGES
+page 463: MEMPAGES
+page 464: MEMPAGES
+page 465: MEMPAGES
+page 466: MEMPAGES
+page 467: MEMPAGES
+page 468: MEMPAGES
+page 469: MEMPAGES
+page 470: MEMPAGES
+page 471: MEMPAGES
+page 472: MEMPAGES
+page 473: MEMPAGES
+page 474: MEMPAGES
+page 475: MEMPAGES
+page 476: MEMPAGES
+page 477: MEMPAGES
+page 478: MEMPAGES
+page 479: MEMPAGES
+page 480: MEMPAGES
+page 481: MEMPAGES
+page 482: MEMPAGES
+page 483: MEMPAGES
+page 484: MEMPAGES
+page 485: MEMPAGES
+page 486: MEMPAGES
+page 487: MEMPAGES
+page 488: MEMPAGES
+page 489: MEMPAGES
+page 490: MEMPAGES
+page 491: MEMPAGES
+page 492: MEMPAGES
+page 493: MEMPAGES
+page 494: MEMPAGES
+page 495: MEMPAGES
+page 496: MEMPAGES
+page 497: MEMPAGES
+page 498: MEMPAGES
+page 499: MEMPAGES
+page 500: MEMPAGES
+page 501: MEMPAGES
+page 502: MEMPAGES
+page 503: MEMPAGES
+page 504: MEMPAGES
+page 505: MEMPAGES
+page 506: MEMPAGES
+page 507: MEMPAGES
+page 508: MEMPAGES
+page 509: MEMPAGES
+page 510: MEMPAGES
+page 511: MEMPAGES
+page 512: MEMPAGES
+page 513: MEMPAGES
+page 514: MEMPAGES
+page 515: MEMPAGES
+page 516: MEMPAGES
+page 517: MEMPAGES
+page 518: MEMPAGES
+page 519: MEMPAGES
+page 520: MEMPAGES
+page 521: MEMPAGES
+page 522: MEMPAGES
+page 523: MEMPAGES
+page 524: MEMPAGES
+page 525: MEMPAGES
+page 526: MEMPAGES
+page 527: MEMPAGES
+page 528: MEMPAGES
+page 529: MEMPAGES
+page 530: MEMPAGES
+page 531: MEMPAGES
+page 532: MEMPAGES
+page 533: MEMPAGES
+page 534: MEMPAGES
+page 535: MEMPAGES
+page 536: MEMPAGES
+page 537: MEMPAGES
+page 538: MEMPAGES
+page 539: MEMPAGES
+page 540: MEMPAGES
+page 541: MEMPAGES
+page 542: MEMPAGES
+page 543: MEMPAGES
+page 544: MEMPAGES
+page 545: MEMPAGES
+page 546: MEMPAGES
+page 547: MEMPAGES
+page 548: MEMPAGES
+page 549: MEMPAGES
+page 550: MEMPAGES
+page 551: MEMPAGES
+page 552: MEMPAGES
+page 553: MEMPAGES
+page 554: MEMPAGES
+page 555: MEMPAGES
+page 556: MEMPAGES
+page 557: MEMPAGES
+page 558: MEMPAGES
+page 559: MEMPAGES
+page 560: MEMPAGES
+page 561: MEMPAGES
+page 562: MEMPAGES
+page 563: MEMPAGES
+page 564: MEMPAGES
+page 565: MEMPAGES
+page 566: MEMPAGES
+page 567: MEMPAGES
+page 568: MEMPAGES
+page 569: MEMPAGES
+page 570: MEMPAGES
+page 571: MEMPAGES
+page 572: MEMPAGES
+page 573: MEMPAGES
+page 574: MEMPAGES
+page 575: MEMPAGES
+page 576: MEMPAGES
+page 577: MEMPAGES
+page 578: MEMPAGES
+page 579: MEMPAGES
+page 580: MEMPAGES
+page 581: MEMPAGES
+page 582: MEMPAGES
+page 583: MEMPAGES
+page 584: MEMPAGES
+page 585: MEMPAGES
+page 586: MEMPAGES
+page 587: MEMPAGES
+page 588: MEMPAGES
+page 589: MEMPAGES
+page 590: MEMPAGES
+page 591: MEMPAGES
+page 592: MEMPAGES
+page 593: MEMPAGES
+page 594: MEMPAGES
+page 595: MEMPAGES
+page 596: MEMPAGES
+page 597: MEMPAGES
+page 598: MEMPAGES
+page 599: MEMPAGES
+page 600: MEMPAGES
+page 601: MEMPAGES
+page 602: MEMPAGES
+page 603: MEMPAGES
+page 604: MEMPAGES
+page 605: MEMPAGES
+page 606: MEMPAGES
+page 607: MEMPAGES
+page 608: MEMPAGES
+page 609: MEMPAGES
+page 610: MEMPAGES
+page 611: MEMPAGES
+page 612: MEMPAGES
+page 613: MEMPAGES
+page 614: MEMPAGES
+page 615: MEMPAGES
+page 616: MEMPAGES
+page 617: MEMPAGES
+page 618: MEMPAGES
+page 619: MEMPAGES
+page 620: MEMPAGES
+page 621: MEMPAGES
+page 622: MEMPAGES
+page 623: MEMPAGES
+page 624: MEMPAGES
+page 625: MEMPAGES
+page 626: MEMPAGES
+page 627: MEMPAGES
+page 628: MEMPAGES
+page 629: MEMPAGES
+page 630: MEMPAGES
+page 631: MEMPAGES
+page 632: MEMPAGES
+page 633: MEMPAGES
+page 634: MEMPAGES
+page 635: MEMPAGES
+page 636: MEMPAGES
+page 637: MEMPAGES
+page 638: MEMPAGES
+page 639: MEMPAGES
+page 640: MEMPAGES
+page 641: MEMPAGES
+page 642: MEMPAGES
+page 643: MEMPAGES
+page 644: MEMPAGES
+page 645: MEMPAGES
+page 646: MEMPAGES
+page 647: MEMPAGES
+page 648: MEMPAGES
+page 649: MEMPAGES
+page 650: MEMPAGES
+page 651: MEMPAGES
+page 652: MEMPAGES
+page 653: MEMPAGES
+page 654: MEMPAGES
+page 655: MEMPAGES
+page 656: MEMPAGES
+page 657: MEMPAGES
+page 658: MEMPAGES
+page 659: MEMPAGES
+page 660: MEMPAGES
+page 661: MEMPAGES
+page 662: MEMPAGES
+page 663: MEMPAGES
+page 664: MEMPAGES
+page 665: MEMPAGES
+page 666: MEMPAGES
+page 667: MEMPAGES
+page 668: MEMPAGES
+page 669: MEMPAGES
+page 670: MEMPAGES
+page 671: MEMPAGES
+page 672: MEMPAGES
+page 673: MEMPAGES
+page 674: MEMPAGES
+page 675: MEMPAGES
+page 676: MEMPAGES
+page 677: MEMPAGES
+page 678: MEMPAGES
+page 679: MEMPAGES
+page 680: MEMPAGES
+page 681: MEMPAGES
+page 682: MEMPAGES
+page 683: MEMPAGES
+page 684: MEMPAGES
+page 685: MEMPAGES
+page 686: MEMPAGES
+page 687: MEMPAGES
+page 688: MEMPAGES
+page 689: MEMPAGES
+page 690: MEMPAGES
+page 691: MEMPAGES
+page 692: MEMPAGES
+page 693: MEMPAGES
+page 694: MEMPAGES
+page 695: MEMPAGES
+page 696: MEMPAGES
+page 697: MEMPAGES
+page 698: MEMPAGES
+page 699: MEMPAGES
+page 700: MEMPAGES
+page 701: MEMPAGES
+page 702: MEMPAGES
+page 703: MEMPAGES
+page 704: MEMPAGES
+page 705: MEMPAGES
+page 706: MEMPAGES
+page 707: MEMPAGES
+page 708: MEMPAGES
+page 709: MEMPAGES
+page 710: MEMPAGES
+page 711: MEMPAGES
+page 712: MEMPAGES
+page 713: MEMPAGES
+page 714: MEMPAGES
+page 715: MEMPAGES
+page 716: MEMPAGES
+page 717: MEMPAGES
+page 718: MEMPAGES
+page 719: MEMPAGES
+page 720: MEMPAGES
+page 721: MEMPAGES
+page 722: MEMPAGES
+page 723: MEMPAGES
+page 724: MEMPAGES
+page 725: MEMPAGES
+page 726: MEMPAGES
+page 727: MEMPAGES
+page 728: MEMPAGES
+page 729: MEMPAGES
+page 730: MEMPAGES
+page 731: MEMPAGES
+page 732: MEMPAGES
+page 733: MEMPAGES
+page 734: MEMPAGES
+page 735: MEMPAGES
+page 736: MEMPAGES
+page 737: MEMPAGES
+page 738: MEMPAGES
+page 739: MEMPAGES
+page 740: MEMPAGES
+page 741: MEMPAGES
+page 742: MEMPAGES
+page 743: MEMPAGES
+page 744: MEMPAGES
+page 745: MEMPAGES
+page 746: MEMPAGES
+page 747: MEMPAGES
+page 748: MEMPAGES
+page 749: MEMPAGES
+page 750: MEMPAGES
+page 751: MEMPAGES
+page 752: MEMPAGES
+page 753: MEMPAGES
+page 754: MEMPAGES
+page 755: MEMPAGES
+page 756: MEMPAGES
+page 757: MEMPAGES
+page 758: MEMPAGES
+page 759: MEMPAGES
+page 760: MEMPAGES
+page 761: MEMPAGES
+page 762: MEMPAGES
+page 763: MEMPAGES
+page 764: MEMPAGES
+page 765: MEMPAGES
+page 766: MEMPAGES
+page 767: MEMPAGES
+page 768: MEMPAGES
+page 769: MEMPAGES
+page 770: MEMPAGES
+page 771: MEMPAGES
+page 772: MEMPAGES
+page 773: MEMPAGES
+page 774: MEMPAGES
+page 775: MEMPAGES
+page 776: MEMPAGES
+page 777: free
+page 778: free
+page 779: free
+page 780: free
+page 781: free
+page 782: free
+page 783: free
+page 784: free
+page 785: free
+page 786: free
+page 787: free
+page 788: free
+page 789: free
+page 790: free
+page 791: free
+page 792: free
+page 793: free
+page 794: free
+page 795: free
+page 796: free
+page 797: free
+page 798: free
+page 799: free
+page 800: free
+page 801: free
+page 802: free
+page 803: free
+page 804: free
+page 805: free
+page 806: free
+page 807: free
+page 808: free
+page 809: free
+page 810: free
+page 811: free
+page 812: free
+page 813: free
+page 814: free
+page 815: free
+page 816: free
+page 817: free
+page 818: free
+page 819: free
+page 820: free
+page 821: free
+page 822: free
+page 823: free
+page 824: free
+page 825: free
+page 826: free
+page 827: free
+page 828: free
+page 829: free
+page 830: free
+page 831: free
+page 832: free
+page 833: free
+page 834: free
+page 835: free
+page 836: free
+page 837: free
+page 838: free
+page 839: free
+page 840: free
+page 841: free
+page 842: free
+page 843: free
+page 844: free
+page 845: free
+page 846: free
+page 847: free
+page 848: free
+page 849: free
+page 850: free
+page 851: free
+page 852: free
+page 853: free
+page 854: free
+page 855: free
+page 856: free
+page 857: free
+page 858: free
+page 859: free
+page 860: free
+page 861: free
+page 862: free
+page 863: free
+page 864: free
+page 865: free
+page 866: free
+page 867: free
+page 868: free
+page 869: free
+page 870: free
+page 871: free
+page 872: free
+page 873: free
+page 874: free
+page 875: free
+page 876: free
+page 877: free
+page 878: free
+page 879: free
+page 880: free
+page 881: free
+page 882: free
+page 883: free
+page 884: free
+page 885: free
+page 886: free
+page 887: free
+page 888: free
+page 889: free
+page 890: free
+page 891: free
+page 892: free
+page 893: free
+page 894: free
+page 895: free
+page 896: free
+page 897: free
+page 898: free
+page 899: free
+page 900: free
+page 901: free
+page 902: free
+page 903: free
+page 904: free
+page 905: free
+page 906: free
+page 907: free
+page 908: free
+page 909: free
+page 910: free
+page 911: free
+page 912: free
+page 913: free
+page 914: free
+page 915: free
+page 916: free
+page 917: free
+page 918: free
+page 919: free
+page 920: free
+page 921: free
+page 922: free
+page 923: free
+page 924: free
+page 925: free
+page 926: free
+page 927: free
+page 928: free
+page 929: free
+page 930: free
+page 931: free
+page 932: free
+page 933: free
+page 934: free
+page 935: free
+page 936: free
+page 937: free
+page 938: free
+page 939: free
+page 940: free
+page 941: free
+page 942: free
+page 943: free
+page 944: free
+page 945: free
+page 946: free
+page 947: free
+page 948: free
+page 949: free
+page 950: free
+page 951: free
+page 952: free
+page 953: free
+page 954: free
+page 955: free
+page 956: free
+page 957: free
+page 958: free
+page 959: free
+page 960: free
+page 961: free
+page 962: free
+page 963: free
+page 964: free
+page 965: free
+page 966: free
+page 967: free
+page 968: free
+page 969: free
+page 970: free
+page 971: free
+page 972: free
+page 973: free
+page 974: free
+page 975: free
+page 976: free
+page 977: free
+page 978: free
+page 979: free
+page 980: free
+page 981: free
+page 982: free
+page 983: free
+page 984: free
+page 985: free
+page 986: free
+page 987: free
+page 988: free
+page 989: free
+page 990: free
+page 991: free
+page 992: free
+page 993: free
+page 994: free
+page 995: free
+page 996: free
+page 997: free
+page 998: free
+page 999: free
+mem_check: 261525 free pages
+mem_check() succeeded!
+in user()
+TRAP frame at 0x106fb4
+  edi  0x00000000
+  esi  0x00010094
+  ebp  0x001084d8
+  ebx  0x00010094
+  edx  0x001084b0
+  ecx  0x00000000
+  eax  0x00000000
+  es   0x----0000
+  ds   0x----0000
+  trap 0x00000000 Divide error
+  err  0x00000000
+  eip  0x001021cd
+  cs   0x----001b
+  flag 0x00003016
+  esp  0x00108490
+  ss   0x----0023
+TRAP frame at 0x106fb4
+  edi  0x00000000
+  esi  0x00010094
+  ebp  0x001084d8
+  ebx  0x00010094
+  edx  0x001084b0
+  ecx  0x00000000
+  eax  0x00000000
+  es   0x----0000
+  ds   0x----0000
+  trap 0x00000000 Divide error
+  err  0x00000000
+  eip  0x001021cd
+  cs   0x----001b
+  flag 0x00003016
+  esp  0x00108490
+  ss   0x----0023
+reip = 1057231
+TRAP frame at 0x106fb4
+  edi  0x00000000
+  esi  0x00010094
+  ebp  0x001084d8
+  ebx  0x00010094
+  edx  0x001084b0
+  ecx  0x00000000
+  eax  0xfeedface
+  es   0x----0000
+  ds   0x----0000
+  trap 0x00000003 Breakpoint
+  err  0x00000000
+  eip  0x00102230
+  cs   0x----001b
+  flag 0x00003046
+  esp  0x00108490
+  ss   0x----0023
+TRAP frame at 0x106fb4
+  edi  0x00000000
+  esi  0x00010094
+  ebp  0x001084d8
+  ebx  0x00010094
+  edx  0x001084b0
+  ecx  0x00000000
+  eax  0xfeedface
+  es   0x----0000
+  ds   0x----0000
+  trap 0x00000003 Breakpoint
+  err  0x00000000
+  eip  0x00102230
+  cs   0x----001b
+  flag 0x00003046
+  esp  0x00108490
+  ss   0x----0023
+reip = 1057328
+TRAP frame at 0x106fb4
+  edi  0x00000000
+  esi  0x00010094
+  ebp  0x001084d8
+  ebx  0x00010094
+  edx  0x001084b0
+  ecx  0x00000000
+  eax  0xe0000000
+  es   0x----0000
+  ds   0x----0000
+  trap 0x00000004 Overflow
+  err  0x00000000
+  eip  0x0010226b
+  cs   0x----001b
+  flag 0x00003886
+  esp  0x00108490
+  ss   0x----0023
+TRAP frame at 0x106fb4
+  edi  0x00000000
+  esi  0x00010094
+  ebp  0x001084d8
+  ebx  0x00010094
+  edx  0x001084b0
+  ecx  0x00000000
+  eax  0xe0000000
+  es   0x----0000
+  ds   0x----0000
+  trap 0x00000004 Overflow
+  err  0x00000000
+  eip  0x0010226b
+  cs   0x----001b
+  flag 0x00003886
+  esp  0x00108490
+  ss   0x----0023
+reip = 1057387
+TRAP frame at 0x106fb4
+  edi  0x00000000
+  esi  0x00010094
+  ebp  0x001084d8
+  ebx  0x00010094
+  edx  0x001084b0
+  ecx  0x00000000
+  eax  0x00000000
+  es   0x----0000
+  ds   0x----0000
+  trap 0x00000005 BOUND Range Exceeded
+  err  0x00000000
+  eip  0x001022b1
+  cs   0x----001b
+  flag 0x00003046
+  esp  0x00108490
+  ss   0x----0023
+TRAP frame at 0x106fb4
+  edi  0x00000000
+  esi  0x00010094
+  ebp  0x001084d8
+  ebx  0x00010094
+  edx  0x001084b0
+  ecx  0x00000000
+  eax  0x00000000
+  es   0x----0000
+  ds   0x----0000
+  trap 0x00000005 BOUND Range Exceeded
+  err  0x00000000
+  eip  0x001022b1
+  cs   0x----001b
+  flag 0x00003046
+  esp  0x00108490
+  ss   0x----0023
+reip = 1057460
+TRAP frame at 0x106fb4
+  edi  0x00000000
+  esi  0x00010094
+  ebp  0x001084d8
+  ebx  0x00010094
+  edx  0x001084b0
+  ecx  0x00000000
+  eax  0x00000005
+  es   0x----0000
+  ds   0x----0000
+  trap 0x00000006 Invalid Opcode
+  err  0x00000000
+  eip  0x001022e7
+  cs   0x----001b
+  flag 0x00003046
+  esp  0x00108490
+  ss   0x----0023
+TRAP frame at 0x106fb4
+  edi  0x00000000
+  esi  0x00010094
+  ebp  0x001084d8
+  ebx  0x00010094
+  edx  0x001084b0
+  ecx  0x00000000
+  eax  0x00000005
+  es   0x----0000
+  ds   0x----0000
+  trap 0x00000006 Invalid Opcode
+  err  0x00000000
+  eip  0x001022e7
+  cs   0x----001b
+  flag 0x00003046
+  esp  0x00108490
+  ss   0x----0023
+reip = 1057513
+TRAP frame at 0x106fb4
+  edi  0x00000000
+  esi  0x00010094
+  ebp  0x001084d8
+  ebx  0x00010094
+  edx  0x001084b0
+  ecx  0x00000000
+  eax  0xffffffff
+  es   0x----0000
+  ds   0x----0000
+  trap 0x0000000d General Protection
+  err  0x0000fffc
+  eip  0x00102321
+  cs   0x----001b
+  flag 0x00003046
+  esp  0x00108490
+  ss   0x----0023
+TRAP frame at 0x106fb4
+  edi  0x00000000
+  esi  0x00010094
+  ebp  0x001084d8
+  ebx  0x00010094
+  edx  0x001084b0
+  ecx  0x00000000
+  eax  0xffffffff
+  es   0x----0000
+  ds   0x----0000
+  trap 0x0000000d General Protection
+  err  0x0000fffc
+  eip  0x00102321
+  cs   0x----001b
+  flag 0x00003046
+  esp  0x00108490
+  ss   0x----0023
+reip = 1057571
+TRAP frame at 0x106fb4
+  edi  0x00000000
+  esi  0x00010094
+  ebp  0x001084d8
+  ebx  0x00010094
+  edx  0x001084b0
+  ecx  0x00000000
+  eax  0x00000003
+  es   0x----0000
+  ds   0x----0000
+  trap 0x0000000d General Protection
+  err  0x00000000
+  eip  0x00102367
+  cs   0x----001b
+  flag 0x00003006
+  esp  0x00108490
+  ss   0x----0023
+TRAP frame at 0x106fb4
+  edi  0x00000000
+  esi  0x00010094
+  ebp  0x001084d8
+  ebx  0x00010094
+  edx  0x001084b0
+  ecx  0x00000000
+  eax  0x00000003
+  es   0x----0000
+  ds   0x----0000
+  trap 0x0000000d General Protection
+  err  0x00000000
+  eip  0x00102367
+  cs   0x----001b
+  flag 0x00003006
+  esp  0x00108490
+  ss   0x----0023
+reip = 1057646
+trap_check_user() succeeded!
