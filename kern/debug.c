@@ -71,19 +71,20 @@ debug_warn(const char *file, int line, const char *fmt,...)
 void gcc_noinline
 debug_trace(uint32_t ebp, uint32_t eips[DEBUG_TRACEFRAMES])
 {
-	uint32_t frame = *(((uint32_t *)ebp)+1);
-	int i=0;
-	while ((ebp!=0x000000)&&(i<DEBUG_TRACEFRAMES)) {
-		eips[i]=frame;
-		ebp=*((uint32_t *)ebp);
-		frame=*(((uint32_t *)ebp)+1);
-		i++;
+	int i = 0;
+	for(; i < DEBUG_TRACEFRAMES && ebp; i++) {
+		uint32_t eip = (*(uint32_t *)(ebp + 4));
+		eips[i] = eip;
+		cprintf("ebp %08x  eip %08x  ", ebp, (*(uint32_t *)(ebp + 4)));
+		cprintf("args %08x %08x %08x %08x %08x\n",
+				(*(uint32_t *)(ebp + 8)),
+				(*(uint32_t *)(ebp + 12)),
+				(*(uint32_t *)(ebp + 16)),
+				(*(uint32_t *)(ebp + 20)),
+				(*(uint32_t *)(ebp + 24)));
+		ebp = (*(uint32_t *)(ebp));
 	}
-	//se há menos que DEBUG_TRACEFRAMES frames eips[i] é setado como nulo
-	while (i<DEBUG_TRACEFRAMES) {
-		eips[i]=0x000000;
-		i++;
-	}
+	for(; i < DEBUG_TRACEFRAMES; i++) { eips[i] = 0; }
 }
 
 

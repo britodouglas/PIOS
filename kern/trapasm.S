@@ -45,12 +45,52 @@
 /*
  * Lab 1: Your code here for generating entry points for the different traps.
  */
+TRAPHANDLER_NOEC(tv0, 0);
+/* TRAPHANDLER_NOEC(trap_debug, 1); */
+TRAPHANDLER_NOEC(tv2, 2);
+TRAPHANDLER_NOEC(tv3, 3);
+TRAPHANDLER_NOEC(tv4, 4);
+TRAPHANDLER_NOEC(tv5, 5);
+TRAPHANDLER_NOEC(tv6, 6);
+TRAPHANDLER_NOEC(tv7, 7);
+TRAPHANDLER(tv8, 8);
+/* TRAPHANDLER_NOEC(trap_coproc_seg_overrun, 9); */
+TRAPHANDLER(tv10, 10);
+TRAPHANDLER(tv11, 11);
+TRAPHANDLER(tv12, 12);
+TRAPHANDLER(tv13, 13);
+TRAPHANDLER(tv14, 14);
+/* TRAPHANDLER_NOEC(reserved, 15); */
+TRAPHANDLER_NOEC(tv16, 16);
+TRAPHANDLER(tv17, 17);
+TRAPHANDLER_NOEC(tv18, 18);
+TRAPHANDLER_NOEC(tv19, 19);
+TRAPHANDLER_NOEC(tv30, 30);
+TRAPHANDLER_NOEC(tv32, 32);
+TRAPHANDLER_NOEC(tv48, 48);
+TRAPHANDLER_NOEC(tv49, 49);
+TRAPHANDLER_NOEC(tv50, 50);
+TRAPHANDLER_NOEC(tv500, 500);
+TRAPHANDLER_NOEC(tv501, 501);
+
 
 /*
  * Lab 1: Your code here for _alltraps
  */
+.globl _alltraps
+_alltraps:
+	pushl %ds
+	pushl %es
+	pushl %fs
+	pushl %gs
+	pushal
 
+	movw $CPU_GDT_KDATA, %ax
+	movw %ax, %ds
+	movw %ax, %es
 
+	pushl %esp // passing trapframe addr as parameter
+	call trap
 
 //
 // Trap return code.
@@ -61,13 +101,18 @@
 // This function does not return to the caller,
 // since the new CPU state this function loads
 // replaces the caller's stack pointer and other registers.
-//
 .globl	trap_return
 .type	trap_return,@function
 .p2align 4, 0x90		/* 16-byte alignment, nop filled */
 trap_return:
-/*
- * Lab 1: Your code here for trap_return
- */
-1:	jmp	1b		// just spin
+	movl 0x4(%esp), %eax
+	movl %eax, %esp // setting stack to trap frame
+	popal
+	popl %gs
+	popl %fs
+	popl %es
+	popl %ds
+	addl $0x8, %esp // trapno and errcode
+	iret
+
 

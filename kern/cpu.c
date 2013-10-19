@@ -39,6 +39,11 @@ cpu cpu_boot = {
 		// 0x10 - kernel data segment
 		[CPU_GDT_KDATA >> 3] = SEGDESC32(1, STA_W, 0x0,
 					0xffffffff, 0),
+
+		[CPU_GDT_UCODE >> 3] = SEGDESC32(1, STA_X | STA_R, 0x0,
+					0xffffffff, 0x3),
+		[CPU_GDT_UDATA >> 3] = SEGDESC32(1, STA_W, 0x0,
+					0xffffffff, 0x3),
 	},
 
 	magic: CPU_MAGIC
@@ -60,10 +65,18 @@ void cpu_init()
 	asm volatile("movw %%ax,%%es" :: "a" (CPU_GDT_KDATA));
 	asm volatile("movw %%ax,%%ds" :: "a" (CPU_GDT_KDATA));
 	asm volatile("movw %%ax,%%ss" :: "a" (CPU_GDT_KDATA));
-	asm volatile("ljmp %0,$1f\n 1:\n" :: "i" (CPU_GDT_KCODE)); // reload CS
+	asm volatile("ljmp %0,$1f\n 1:\n" :: "i" (CPU_GDT_KCODE));
+	// reload CS
+
+	c->gdt[CPU_GDT_TSS >> 3] = SEGDESC16(0, STS_T32A, 
+			(uintptr_t)(&(c->tss)), sizeof(taskstate)-1, 0);
+	c->tss.ts_esp0 = (uintptr_t)(c->kstackhi);
+	c->tss.ts_ss0 = CPU_GDT_KDATA;
+	ltr(CPU_GDT_TSS);
 
 	// We don't need an LDT.
 	asm volatile("lldt %%ax" :: "a" (0));
+	cprintf("cpu_init complete\n");
 }
 
 
