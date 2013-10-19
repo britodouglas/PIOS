@@ -1,6 +1,6 @@
 #!/bin/sh
 
-qemuopts="-hda obj/kern/kernel.img"
+qemuopts="smp 2 -hda obj/kern/kernel.img"
 . misc/grade-functions.sh
 
 

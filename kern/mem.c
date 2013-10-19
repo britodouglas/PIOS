@@ -58,10 +58,14 @@ mem_init(void)
 	cprintf("base = %dK, extended = %dK\n",
 		(int)(basemem/1024), (int)(extmem/1024));
 
-
 	// Insert code here to:
 	// (1)	allocate physical memory for the mem_pageinfo array,
 	//	making it big enough to hold mem_npage entries.
+	mem_pageinfo = mem_ptr(ROUNDUP(mem_phys(end), PAGESIZE));
+	cprintf("kernel end %p, pageinfo %p\n", end, mem_pageinfo);
+	cprintf("num pages %d, pagetable takes %d pages\n", mem_npage,
+		ROUNDUP(mem_npage*sizeof(pageinfo), PAGESIZE) / PAGESIZE);
+
 	// (2)	add all pageinfo structs in the array representing
 	//	available memory that is not in use for other purposes.
 	//
@@ -83,6 +87,32 @@ mem_init(void)
 	pageinfo **freetail = &mem_freelist;
 	int i;
 	for (i = 0; i < mem_npage; i++) {
+		if(i == 0 || i == 1) {
+			cprintf("page %d: IDT/BIOS/IO\n", i);
+			continue;
+		}
+		if(i >= MEM_IO/PAGESIZE && i < MEM_EXT/PAGESIZE) {
+			cprintf("page %d: BIOS IO\n", i);
+			continue;
+		}
+		uint32_t kstartpg = ROUNDDOWN(mem_phys(start),PAGESIZE);
+		kstartpg /= PAGESIZE;
+		uint32_t kendpg = ROUNDUP(mem_phys(end), PAGESIZE);
+		kendpg /= PAGESIZE;
+		if(i >= kstartpg && i < kendpg) {
+			cprintf("page %d: KERNEL\n", i);
+			continue;
+		}
+		uint32_t mstartpg = ROUNDDOWN(mem_phys(mem_pageinfo),PAGESIZE);
+		mstartpg /= PAGESIZE;
+		uint32_t mendpg = mem_phys(&mem_pageinfo[mem_npage]);
+		mendpg = ROUNDUP(mendpg, PAGESIZE) / PAGESIZE;
+		if(i >= mstartpg && i < mendpg) {
+			cprintf("page %d: MEMPAGES\n", i);
+			continue;
+		}
+		if(i < 1000) cprintf("page %d: free\n", i);
+
 		// A free page has no references to it.
 		mem_pageinfo[i].refcount = 0;
 
@@ -93,7 +123,7 @@ mem_init(void)
 	*freetail = NULL;	// null-terminate the freelist
 
 	// ...and remove this when you're ready.
-	panic("mem_init() not implemented");
+	// panic("mem_init() not implemented");
 
 	// Check to make sure the page allocator seems to work correctly.
 	mem_check();
@@ -113,9 +143,11 @@ mem_init(void)
 pageinfo *
 mem_alloc(void)
 {
-	// Fill this function in
-	// Fill this function in.
-	panic("mem_alloc not implemented.");
+	if(!mem_freelist) { return NULL; }
+	pageinfo *r = mem_freelist;
+	mem_freelist = r->free_next;
+	// TODO: MUTUAL EXCLUSION
+	return r;
 }
 
 //
@@ -125,8 +157,9 @@ mem_alloc(void)
 void
 mem_free(pageinfo *pi)
 {
-	// Fill this function in.
-	panic("mem_free not implemented.");
+	assert(pi->refcount == 0);
+	pi->free_next = mem_freelist;
+	mem_freelist = pi;
 }
 
 //

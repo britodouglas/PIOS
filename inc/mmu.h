@@ -141,7 +141,7 @@
 
 #include <inc/types.h>
 
-// Segment Descriptors
+// Segment Descriptors (8 bytes)
 typedef struct segdesc {
 	unsigned sd_lim_15_0 : 16;  // Low bits of segment limit
 	unsigned sd_base_15_0 : 16; // Low bits of segment base address
@@ -246,7 +246,7 @@ typedef struct taskstate {
 	uint16_t ts_iomb;	// I/O map base address
 } taskstate;
 
-// Gate descriptors for interrupts and traps
+// Gate descriptors for interrupts and traps (8 bytes)
 typedef struct gatedesc {
 	unsigned gd_off_15_0 : 16;   // low 16 bits of offset in segment
 	unsigned gd_ss : 16;         // segment selector

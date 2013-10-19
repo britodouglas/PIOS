@@ -65,6 +65,7 @@ init(void)
 	// Can't call mem_alloc until after we do this!
 	mem_init();
 
+//<<<<<<< HEAD
 	// Lab 2: check spinlock implementation
 	if (cpu_onboot())
 		spinlock_check();
@@ -85,6 +86,20 @@ init(void)
 	// running on the user_stack declared above,
 	// instead of just calling user() directly.
 	user();
+//=======
+	user_stack[sizeof(user_stack)-1] = 0;
+	user_stack[sizeof(user_stack)-2] = 0;
+	user_stack[sizeof(user_stack)-3] = 0;
+	user_stack[sizeof(user_stack)-4] = 0;
+	asm volatile("pushl %0" : : "i" (CPU_GDT_UDATA | 0x3));
+	asm volatile("pushl %0" : : "i" (user_stack + sizeof(user_stack) - 4));
+	uint32_t eflags = (FL_IOPL_MASK & FL_IOPL_3);
+	// eflags = 0;
+	asm volatile("pushl %0" : : "a" (eflags));
+	asm volatile("pushl %0" : : "i" (CPU_GDT_UCODE | 0x3));
+	asm volatile("pushl $user");
+	asm volatile("iret");
+//>>>>>>> lab1
 }
 
 // This is the first function that gets run in user mode (ring 3).
@@ -93,6 +108,7 @@ init(void)
 void
 user()
 {
+	assert(0 == 0);
 	cprintf("in user()\n");
 	assert(read_esp() > (uint32_t) &user_stack[0]);
 	assert(read_esp() < (uint32_t) &user_stack[sizeof(user_stack)]);
